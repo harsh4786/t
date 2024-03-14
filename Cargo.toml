@@ -1,0 +1,20 @@
+[package]
+name = "t"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+solana-sdk  = { git = "https://github.com/tinydancer-io/solana-1.18.git", branch = "epoch-pubsub" }
+solana-client = { git = "https://github.com/tinydancer-io/solana-1.18.git", branch = "epoch-pubsub" }
+base64 = "0.13.0"
+bs58 = {version = "0.5.0", features = ["alloc"]}
+tokio = "*"
+spl-pod = "^0.1.0"
+
+[patch.crates-io]
+solana-program = { git = "https://github.com/tinydancer-io/solana-1.18.git", branch = "epoch-pubsub" }
+solana-sdk = { git = "https://github.com/tinydancer-io/solana-1.18.git", branch = "epoch-pubsub" }  
+solana-client = { git = "https://github.com/tinydancer-io/solana-1.18.git", branch = "epoch-pubsub" }  
+solana-zk-token-sdk = { git = "https://github.com/tinydancer-io/solana-1.18.git", branch = "epoch-pubsub" }
